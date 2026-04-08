@@ -43,7 +43,7 @@ app.use((req, res, next) => {
 	
 	// Gán thông báo (lỗi, thành công) vào biến cục bộ
 	res.locals.message = '';
-	if (err) res.locals.message =x '<span class="text-danger">' + err + '</span>';
+	if (err) res.locals.message = '<span class="text-danger">' + err + '</span>';
 	if (msg) res.locals.message = '<span class="text-success">' + msg + '</span>';
 	
 	next();
